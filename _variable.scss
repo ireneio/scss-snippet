@@ -1,0 +1,57 @@
+// Colors
+$primary: #7828b4;
+$accent: #9013fe;
+$contrast: rgba(0, 0, 0, 1);
+$info: #f5b767;
+$danger: #f56e67;
+$success: #38c953;
+
+$white: #ffffff;
+$black: #000;
+$light-grey: #f2f2f2;
+$grey: #ebebeb;
+$dark-grey: #d7d7d7;
+$darker-grey: #9b9b9b;
+
+// Grid
+$container-max-width: 1140px;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
+
+$gutter-width: 30px;
+$grid-columns: 12;
+
+$xl-breakpoint: 1024px;
+$lg-breakpoint: 768px;
+$md-breakpoint: 570px;
+$sm-breakpoint: 375px;
+
+// Fonts
+$fz-base: 1rem;
+
+$fz-xxxl: ($fz-base * 2.25);
+$fz-xxl: ($fz-base * 2);
+$fz-xl: ($fz-base * 1.75);
+$fz-l: ($fz-base * 1.5);
+$fz-m: ($fz-base * 1.25);
+$fz-s: $fz-base;
+$fz-xs: ($fz-base * 0.75);
+
+// Padding & Margin
+$m-xxxl: 40px;
+$m-xxl: 30px;
+$m-xl: 20px;
+$m-l: 16px;
+$m-m: 12px;
+$m-s: 8px;
+$m-xs: 4px;
+
+// Button
+$btn-padding: 12px;
+$btn-round-radius: 100px;
+
+$baseline: 10px;

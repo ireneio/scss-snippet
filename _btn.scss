@@ -1,0 +1,68 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: $btn-padding;
+  &--block {
+    @extend .btn;
+    display: block;
+  }
+  &--round {
+    @extend .btn;
+    border-radius: $btn-round-radius;
+  }
+  &--primary {
+    @extend .btn;
+    color: $white;
+    background-color: $primary;
+    &:hover {
+      color: $primary;
+      background-color: $white;
+    }
+  }
+  &--accent {
+    @extend .btn;
+    color: $white;
+    background-color: $accent;
+    &:hover {
+      color: $accent;
+      background-color: $white;
+    }
+  }
+  &--success {
+    @extend .btn;
+    border: 1px solid $success;
+    color: $success;
+    background-color: $white;
+    &:hover {
+      color: $white;
+      background-color: $success;
+    }
+  }
+  &--danger {
+    @extend .btn;
+    border: 1px solid $danger;
+    color: $danger;
+    background-color: $white;
+    &:hover {
+      color: $white;
+      background-color: $danger;
+    }
+  }
+  &--info {
+    @extend .btn;
+    border: 1px solid $info;
+    color: $info;
+    background-color: $white;
+    &:hover {
+      color: $white;
+      background-color: $info;
+    }
+  }
+  &--disabled {
+    @extend .btn;
+    border: 1px solid $grey;
+    color: $grey;
+    background-color: $white;
+    cursor: not-allowed;
+  }
+}

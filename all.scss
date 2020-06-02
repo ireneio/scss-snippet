@@ -1,0 +1,13 @@
+@import './reset';
+@import './variable';
+@import './util';
+@import './media';
+@import './grid';
+// @import './style';
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,400,700&display=swap');
+
+body {
+  font-size: $fz-base;
+  font-family: 'noto sans', sans-serif;
+}

@@ -1,0 +1,44 @@
+@mixin wrapText {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin wrapTextMulLines($lines) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@mixin align-center-lh($height, $line-height) {
+  height: $height;
+  line-height: $line-height;
+}
+
+@mixin align-center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@function rhythm($level) {
+  @return $baseLine * ceil($level);
+}
+
+@function line($size) {
+  @return rhythm($size * 1.2 / $baseLine);
+}
+
+@mixin font($size, $line-height: auto) {
+  //設定字體大小和間距
+  $line: line($size);
+
+  font-size: $size;
+  @if $line-height == auto or $line-height < $line {
+    line-height: $line;
+  } @else {
+    line-height: $line-height;
+  }
+}
